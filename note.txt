@@ -1,0 +1,40 @@
+
+--ổ cứngnha
+Kích thước
+Trọng lượng
+Loại ổ cứng
+Kết nối
+Dung lượng
+Tốc độ đọc
+Tốc độ ghi
+Hãng sản xuất
+ 
+
+card màng hinh
+
+Kích thước
+Chipset
+Dung lượng
+Kiểu bộ nhớ
+Giao diện bộ nhớ
+GPU
+Hãng sản xuất
+
+ nguồn
+
+Công suất nguồn
+Quạt làm mát
+Chứng nhận bảo vệ
+Hệ số công suất
+Tiêu chuẩn nguồn
+Hãng sản xuất
+
+tan nhiet
+
+Kích thước
+Trọng lượng
+Loại tản nhiệt
+Số lượng quạt
+Độ ồn (dBA)
+Hãng sản xuất
+
