@@ -1,0 +1,103 @@
+:root {
+    --bg: #f6f7fb;
+    --card: #fff;
+    --accent: #2b6cb0;
+    --muted: #666
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    margin: 0;
+    background: var(--bg);
+    color: #111
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+.hero {
+    background: linear-gradient(90deg, #ffffff88, #f0f4ff);
+    padding: 28px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.avatar {
+    width: 84px;
+    height: 84px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #e6eef8
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px
+}
+
+.role {
+    margin: 6px 0;
+    color: var(--accent);
+    font-weight: 600
+}
+
+.contact a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-right: 8px
+}
+
+main {
+    display: grid;
+    gap: 20px
+}
+
+section {
+    background: var(--card);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(13, 38, 76, 0.06)
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px
+}
+
+.job h3 {
+    margin: 0
+}
+
+.meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 8px
+}
+
+footer {
+    text-align: center;
+    color: var(--muted);
+    padding: 10px 0
+}
+
+@media(max-width:640px) {
+    .hero {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .avatar {
+        width: 68px;
+        height: 68px
+    }
+}
