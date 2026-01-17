@@ -1,71 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>CV — TÊN BẠN</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Võ Đức Thiên | Portfolio & CV</title>
+    <meta name="description" content="Portfolio và CV của Võ Đức Thiên - Backend Developer chuyên nghiệp.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="hero">
+    <div class="background-blur"></div>
+
+    <header>
         <div class="container">
-            <img class="avatar" src="avatar.png" alt="Avatar">
-            <h1>Võ Đức Thiên</h1>
-            <p class="role">Backend Developer</p>
-            <p class="contact">
-                <a href="mailto:thien879811@gmail.com">thien879811@gmail.com</a> •
-                <a href="https://github.com/thien879811" target="_blank">github.com/thien879811</a> •
-                <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-            </p>
+            <nav>
+                <a href="#" class="logo">VDT.</a>
+                <ul class="nav-links">
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section id="summary">
-            <p>Có kinh nghiệm làm việc với các ngôn ngữ lập trình Node.js, PHP và các framework như Laravel, Express.js. Tôi cũng có kinh nghiệm làm việc với các cơ sở dữ liệu như MySQL, MongoDB.</p>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-content animate">
+                <h1>Hi, I'm <span class="gradient-text">Võ Đức Thiên</span></h1>
+                <p>Tôi là một <span style="font-weight: 600; color: var(--primary);">Fullstack Developer</span> với kỹ
+                    năng đa dạng từ Web (Next.js, Laravel) đến Mobile (Android Native, C++). Tôi đam mê tạo ra các giải
+                    pháp công nghệ toàn diện và tối ưu.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Khám Phá Dự Án</a>
+                    <a href="#contact" class="btn"
+                        style="color: var(--text-main); margin-left: 1rem; border: 1px solid var(--text-muted);">Liên Hệ
+                        Tôi</a>
+                </div>
+            </div>
+            <div class="hero-image animate">
+                <img src="avatar.png" alt="Võ Đức Thiên"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Vo+Duc+Thien&background=6366f1&color=fff&size=320'">
+            </div>
         </section>
 
-        <section id="experience">
-            <article class="job">
-                <h3>IT Software Engineer</h3>
-                <p class="meta">Tháng 8/2025 - Hiện tại • Cần Thơ</p>
-                <ul>
-                    <li>Thiết kế và triển khai các hệ thống backend cho các ứng dụng web và di động.</li>
-                </ul>
-            </article>
-            <!-- Thêm job khác -->
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2 class="section-title">Về Tôi</h2>
+            <div
+                style="background: var(--card-bg); padding: 3rem; border-radius: 2rem; border: 1px solid var(--glass-border);">
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                    Với nền tảng là Kỹ sư Công nghệ thông tin từ Đại học Cần Thơ, tôi đã phát triển nhiều dự án đa dạng:
+                    từ hệ thống Thương mại điện tử (Next.js) đến Quản lý cửa hàng (Laravel/Vue.js). Tôi cũng có kinh
+                    nghiệm làm việc với ứng dụng hệ thống và mobile như USBCAM Android và ADB Remote.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Kinh nghiệm</h4>
+                        <p>Fullstack & Mobile Developer</p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Học vấn</h4>
+                        <p>Kỹ sư CNTT - Đại học Cần Thơ (2025)</p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary);">Vị trí</h4>
+                        <p>Cần Thơ, Việt Nam</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="education">
-            <h2>Học vấn</h2>
-            <p>Đại học Cần Thơ — Bằng Kỹ sư Công nghệ thông tin, Năm tốt nghiệp 2025</p>
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2 class="section-title">Dự Án GitHub</h2>
+            <div id="repos-loader" style="text-align: center; font-style: italic; color: var(--text-muted);">
+                Đang tải các dự án từ GitHub...
+            </div>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Data injected by JS -->
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Kỹ năng</h2>
-            <p>Node.js, PHP, Laravel, Express.js, MySQL, MongoDB...</p>
+        <!-- Skills Section -->
+        <section id="skills" class="container">
+            <h2 class="section-title">Kỹ Năng & Công Nghệ</h2>
+            <div class="skills-container">
+                <div class="skill-pill">Node.js</div>
+                <div class="skill-pill">PHP</div>
+                <div class="skill-pill">Laravel</div>
+                <div class="skill-pill">Express.js</div>
+                <div class="skill-pill">MySQL</div>
+                <div class="skill-pill">MongoDB</div>
+                <div class="skill-pill">TypeScript</div>
+                <div class="skill-pill">Git & GitHub</div>
+                <div class="skill-pill">Nginx</div>
+                <div class="skill-pill">Linux</div>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Quản lý của hàng</h2>
-            <ul>
-                <li><strong>Quản lý của hàng</strong> — Quản lý của hàng. <a href="https://github.com/Thien879811/Quanlycuahang.git"
-                        target="_blank">Repo</a></li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Liên hệ</h2>
-            <p>Email: <a href="mailto:thien879811@gmail.com">thien879811@gmail.com</a></p>
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2 class="section-title">Kết Nối Với Tôi</h2>
+            <div class="contact-card">
+                <h3>Hãy cùng tạo nên điều gì đó tuyệt vời!</h3>
+                <p style="margin: 1.5rem 0 2rem; color: var(--text-muted);">Tôi luôn sẵn sàng thảo luận về các dự án mới
+                    hoặc cơ hội hợp tác.</p>
+                <div style="margin-bottom: 2rem;">
+                    <a href="mailto:thien879811@gmail.com" class="btn btn-primary" style="font-size: 1.2rem;">Email:
+                        thien879811@gmail.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/thien879811" target="_blank" aria-label="GitHub">
+                        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank" aria-label="LinkedIn">
+                        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="container">
-        <p>© <span id="year"></span> Võ Đức Thiên — CV trên GitHub Pages</p>
+    <footer
+        style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--glass-border); color: var(--text-muted);">
+        <p>© <span id="year"></span> Võ Đức Thiên — Built with ✨ Design focus</p>
     </footer>
 
+    <script src="scripts.js"></script>
     <script>
         document.getElementById('year').innerText = new Date().getFullYear();
     </script>
